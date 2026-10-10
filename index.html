@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Cesta od 18 do 30</title>
+  <meta name="description" content="Pár minut, anonymně: jak řešíš peníze při velkých životních změnách? Pomoz mi s případovou studií.">
+  <meta name="theme-color" content="#FBF7F0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#15130F" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+  <meta name="referrer" content="no-referrer">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:title" content="Cesta od 18 do 30">
+  <meta property="og:description" content="Pár minut, anonymně: jak řešíš peníze při velkých životních změnách? Pomoz mi s případovou studií.">
+  <!-- DOPLNIT po nasazení: fildvoracek-ux a cesta-18-30 -->
+  <meta property="og:url" content="https://fildvoracek-ux.github.io/cesta-18-30/">
+  <meta property="og:image" content="https://fildvoracek-ux.github.io/cesta-18-30/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cesta od 18 do 30">
+  <meta name="twitter:description" content="Pár minut, anonymně: jak řešíš peníze při velkých životních změnách?">
+  <meta name="twitter:image" content="https://fildvoracek-ux.github.io/cesta-18-30/assets/og.png">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9A%B6%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="tl-meta"><span id="age">Je ti teď 18</span><span id="eta"></span></div>
+    <div class="track" id="bar" role="progressbar" aria-label="Postup hrou" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+      <div class="fill" id="fill"></div>
+      <div class="marker" id="marker" aria-hidden="true">🚶</div>
+    </div>
+    <div class="ticks" aria-hidden="true"><span>18</span><span>21</span><span>24</span><span>27</span><span>30</span></div>
+  </header>
+  <main id="stage" class="stage"><noscript><p class="lead">Ke hře potřebuješ zapnutý JavaScript. Omlouvám se.</p></noscript></main>
+  <div class="actions" id="actions"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="testbadge" id="testbadge" hidden>testovací režim</div>
+  <script src="config.js"></script>
+  <script src="content.js"></script>
+  <script src="balance.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
